@@ -1,0 +1,139 @@
+
+/* Main Form */
+.employee-form {
+  width: 100%;
+  max-width: 480px;
+  margin: 35px auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e8eaf0;
+  border-radius: 18px;
+  box-shadow: 0 8px 35px rgba(15, 23, 42, 0.07);
+  box-sizing: border-box;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Heading */
+.employee-form h2 {
+  margin: 0 0 28px;
+  color: #171923;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+/* Labels */
+.form-group label {
+  color: #41465a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Inputs and Select */
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #e2e5ec;
+  border-radius: 10px;
+  outline: none;
+  background: #f9fafc;
+  color: #202435;
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+.form-group input::placeholder {
+  color: #a1a6b5;
+}
+
+.form-group input:hover,
+.form-group select:hover {
+  border-color: #c5cbea;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  background: #ffffff;
+  border-color: #635bff;
+  box-shadow: 0 0 0 4px rgba(99, 91, 255, 0.10);
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.form-buttons button {
+  flex: 1;
+  height: 46px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Submit Button */
+.submit-btn {
+  color: #ffffff;
+  background: linear-gradient(135deg, #635bff, #5145e5);
+  box-shadow: 0 4px 12px rgba(99, 91, 255, 0.20);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px rgba(99, 91, 255, 0.28);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* Cancel Button */
+.cancel-btn {
+  color: #555b6e;
+  background: #f0f1f5;
+}
+
+.cancel-btn:hover {
+  background: #e5e7ed;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .employee-form {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 23px 18px;
+    border-radius: 14px;
+  }
+
+  .employee-form h2 {
+    font-size: 21px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+}
+
+.submit-btn:disabled,
+.cancel-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
